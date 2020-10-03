@@ -1,0 +1,237 @@
+/*alert('Hello World');
+console.log('Hello  World');
+console.error("This is an error");
+console.warn('This is a WArning');*/
+
+//var, let, const
+/*let score;
+score=10;
+console.log(score);
+const fixvalue=22;
+console.log(fixvalue);*/
+
+//Data Types Strings, numbers, boolean, null, undefined
+
+/*const name='Awais'
+const age=25
+const percentage=25.90
+const isCool=true
+const x=null
+const y=undefined
+
+//let with no value is also undefined
+
+let z;
+console.log(typeof name);*/
+
+/*const age=25
+console.log('My nam is '+name+  ' and my age is '+age)
+console.log(`My name is ${name} and my age is ${age}`)*/
+
+/*const s= "H e l l o W o r l d";
+console.log(s)
+console.log(s.length)
+console.log(s.toUppercase)
+console.log(s.substring(0,5))
+console.log(s.split(' '))*/
+//in ' we can definen anything from which we want to split iy'
+
+//arrays: variables that holds multiple values
+
+/*const number=new Array(5,9,5,8,5 );
+console.log(number);
+const fruits=['apple', 'banana', 'orange']
+console.log(fruits);
+console.log(number + fruits)
+console.log(fruits[1])
+fruits.push('pears')
+fruits.unshift('pears')
+console.log(fruits);
+console.log(Array.isArray('fruits'))*/
+
+//Object literal
+
+/*const person= {
+			 	fname: 'Awais',
+				lname: 'Amin',
+				age: 25,
+				hobbies:['movie','travel','singing'],
+				address: {
+						house:'12 main st',
+						city:'Lahore',
+						state:'punjab',
+
+
+				}
+
+}*/
+//console.log(person);
+//console.log(person.fname, person.lname);
+//console.log(person.hobbies[2])
+
+/*we are assigning fname and lname as a costant which is
+available in person, now we can treat it as a separate var*/
+//const {fname, lname}=person;
+//console.log(lname)
+
+//adding to existing object
+
+/*console.log(person)
+person.email='awaisamin858@gmail.com'
+console.log(person)*/
+
+//new array
+
+/*const todos=[
+	{
+		id:1,
+		name:'Awais',
+		isCompleted: true,
+	},
+	{
+		id:2,
+		name:'Ali',
+		isCompleted: true,
+	},
+	{
+		id:3,
+		name:'salman',
+		isCompleted: true,
+	}
+
+
+]
+
+console.log(todos)
+console.log(todos[1])
+console.log(todos[1].name)*/
+
+//loops
+
+//for
+
+/*for (let i=1; i<=10;i++)
+{
+
+	console.log(`for loop number ${i}`)
+}
+let a=0;
+while (a<=10)
+{
+	console.log(`while loop number ${a}`)
+	a++;	
+}
+*/
+
+//loop on arrays
+
+/*const todos=[
+	{
+		id:1,
+		name:'Awais',
+		isCompleted: true,
+	},
+	{
+		id:2,
+		name:'Ali',
+		isCompleted: true,
+	},
+	{
+		id:3,
+		name:'salman',
+		isCompleted: true,
+	}]
+
+	for (let i=0; i<todos.length;i++)
+	{
+
+		console.log(todos[i].name);
+	}
+
+	//for of loop
+
+	for(let a of todos)
+	{
+
+		console.log(a.name, a.id)
+	}
+*/
+
+//conditionals
+
+/*const x=101;
+if (x==10) {
+
+	console.log('x is = 10')
+} else if (x==9)
+{
+	console.log('x is = 9')
+}
+else
+{
+	console.log('x is not 10 or 9')
+}*/
+
+// terniary operatores (short version of if) ? is if : is else
+
+/*const x=5;
+const color= x==5 ? 'red' : 'back' ;
+console.log(color)*/
+
+//swithces
+/*const color='blck'
+switch (color){
+case 'red':
+	console.log('color is red')
+break;
+case 'green':
+	console.log('color is green')
+break;
+case 'black':
+	console.log('color is black')
+break;
+default:
+console.log('color is invisible')
+}
+*/
+
+//functions
+
+/*unction sumup(a,b) {
+
+	console.log(a+b)
+}
+
+sumup(9,2);
+*/
+
+//class
+
+class Person{
+
+		constructor (fname,lname,dob){
+
+			this.fname = fname;
+			this.lname = lname;
+			this.dob   = dob;
+		}
+
+}
+
+const person1=new Person('Awais','Amin','5-02-1997');
+console.log(person1.fname)
+console.log(person1.dob)
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>This is JavaScript</h1>
+	<script src="main.js">
+		
+	</script>
+
+</body>
+</html>
